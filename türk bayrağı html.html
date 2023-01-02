@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Türk bayrağı</title>
+    <style>
+        *{
+            border: 0;
+            outline: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .iframe {
+            width: 360px;
+            height: 240px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .circle {
+            border-radius: 100px;
+        }
+
+        .circle:first-child {
+            width: 120px;
+            height: 120px;
+            margin-left: 55px;
+            background-color: white;
+            z-index: 0;
+        }
+
+        .circle {
+            width: 90px;
+            height: 90px;
+            margin-left: -75px;
+            background-color: red;
+            z-index: 1;
+        }
+
+        .ucgen {
+            border-bottom: 20px solid white;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            position: absolute;
+            z-index: 999;
+            margin-left: 180px;
+        }
+
+        .uc1 {
+            transform: rotate(20deg);
+        }
+
+        .uc2 {
+            transform: rotate(90deg);
+        }
+
+        .uc3 {
+            transform: rotate(160deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="iframe">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="ucgen uc1"></div>
+        <div class="ucgen uc2"></div>
+        <div class="ucgen uc3"></div>
+    </div>
+</body>
+
+</html>
